@@ -1202,6 +1202,11 @@ static void HandleMediaPlayerRecord(const libvlc_event_t * event, void * opaque)
     libvlc_media_player_set_pause(_playerInstance, 1);
 }
 
+- (void)resume
+{
+    libvlc_media_player_set_pause(_playerInstance, 0);
+}
+
 - (void)stop
 {
     libvlc_media_player_stop_async(_playerInstance);

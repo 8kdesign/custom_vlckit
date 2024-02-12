@@ -741,6 +741,11 @@ extern NSString *const VLCTitleDescriptionIsMenu;
 - (void)pause;
 
 /**
+ * Resumes playing of media.
+ */
+- (void)resume;
+
+/**
  * Stop the playing.
  */
 - (void)stop;
